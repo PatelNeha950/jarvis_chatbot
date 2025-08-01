@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+#assistant-img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px auto;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+  display: block;
+  box-shadow: 0 0 20px cyan;
+}
+#assistant-img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px cyan);
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+#assistant-img {
+  animation: pulse 3s infinite;
+}
+
+
+
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  background: #2a2a2a;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: cyan;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
